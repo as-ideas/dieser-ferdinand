@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="65px" height="65px" viewBox="0 0 65 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="logo" transform="translate(1.000000, 1.000000)">
+            <path d="M62.8721,31.5 C62.8721,48.826 48.8261,62.872 31.5001,62.872 C14.1741,62.872 0.1281,48.826 0.1281,31.5 C0.1281,14.174 14.1741,0.128 31.5001,0.128 C48.8261,0.128 62.8721,14.174 62.8721,31.5 Z" id="linie-außen" stroke="#C1272D" stroke-width="1.238"></path>
+            <path d="M58.3311,31.5 C58.3311,46.318 46.3181,58.331 31.5001,58.331 C16.6821,58.331 4.6691,46.318 4.6691,31.5 C4.6691,16.682 16.6821,4.669 31.5001,4.669 C46.3181,4.669 58.3311,16.682 58.3311,31.5 Z" id="linie-innen" stroke="#C1272D" stroke-width="1.651" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.411,3.7"></path>
+            <polygon id="strich-oben" fill="#C1272D" points="31.085 21.94 35.021 21.94 35.021 15.38 31.085 15.38"></polygon>
+            <polygon id="strich-unten" fill="#C1272D" points="31.085 45.555 35.021 45.555 35.021 38.995 31.085 38.995"></polygon>
+            <path d="M32.9131,18.3789 C36.4481,18.3789 39.1571,19.6179 41.2681,21.7309 L38.6981,24.7609 C37.0911,23.2909 35.2551,22.1899 32.6841,22.1899 C28.2291,22.1899 24.9241,25.3119 24.9241,30.4079 C24.9241,35.4129 28.2751,38.6269 32.6371,38.6269 C35.3471,38.6269 37.4121,37.3869 39.0191,35.9179 L41.4071,38.9939 C39.4781,40.9229 36.5861,42.4379 32.6841,42.4379 C25.4291,42.4379 20.8371,37.3869 20.8371,30.4539 C20.8371,23.5659 25.6121,18.3789 32.9131,18.3789" id="C" fill="#C1272D"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,101 @@
+.topUpModal {
+    &__container {
+        background: #49a8d8;
+        
+        > h1 {
+            margin: 0;
+            color: #fff;
+            text-align: center;
+            font-size: 40px;
+            box-sizing: border-box;
+            width: 90%;
+            max-width: 400px;
+        }
+    }
+    
+    &__amountItemList {
+        display: flex;
+        align-items: center;
+        height: 150px;
+        margin: 0;
+        padding: 0;
+        justify-content: space-around;
+        color: #49a8d8;
+        font-size: 40px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 70%;
+        max-width: 300px;
+        text-align: center;
+    }
+
+    &__amountItem {
+        font-weight: 500;
+        height: 70px;
+        width: 70px;
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 9999px;
+        display: flex;
+        box-sizing: border-box;
+        align-items: center;
+        color: #fff;
+        font-size: 24px;
+        justify-content: center;
+        transition: .5s;
+        cursor: pointer;
+
+        &--active {
+            color: rgb(73, 168, 216);
+            background: #fff;     
+            transform: rotateY(360deg);
+        }
+    }
+
+    &__chargeButton {
+        width: 90%;
+        max-width: 400px;
+        border: 0;
+        background-color: #fff;
+        font-weight: bold;
+        font-size: 28px;
+        color: #49a8d8;
+        cursor: pointer;
+        text-transform: lowercase;
+        letter-spacing: 1px;
+        padding: 8px 15px;
+        border-radius: 5px;
+    }
+
+    &__paymentMethod {
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+
+        justify-content: center;
+        align-items: center;
+
+        > img {
+            width: 120px;
+            background: #fff;
+            border-radius: 5px;
+            padding: 0 10px;
+        }
+        }
+
+    &__paymentText {
+            font-family: 'Fira Sans', sans-serif;
+            font-size: 18px;
+            color: #fff;      
+            text-transform: lowercase;
+            font-weight: 500;
+            margin-bottom: 5px;
+    }
+
+    &__explanation {
+        margin: 20px 0;
+        color: #fff;
+        font-weight: 500;
+        font-size: 24px;
+    }
+}

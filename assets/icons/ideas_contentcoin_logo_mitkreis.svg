@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="71px" height="71px" viewBox="0 0 71 71" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-5">
+            <circle id="Oval-Copy-7" fill="#E95432" cx="35.5" cy="35.5" r="35.5"></circle>
+            <path d="M66.8721,35.5 C66.8721,52.826 52.8261,66.872 35.5001,66.872 C18.1741,66.872 4.1281,52.826 4.1281,35.5 C4.1281,18.174 18.1741,4.128 35.5001,4.128 C52.8261,4.128 66.8721,18.174 66.8721,35.5 Z" id="linie-außen" stroke="#C1272D" stroke-width="1.238"></path>
+            <path d="M62.3311,35.5 C62.3311,50.318 50.3181,62.331 35.5001,62.331 C20.6821,62.331 8.6691,50.318 8.6691,35.5 C8.6691,20.682 20.6821,8.669 35.5001,8.669 C50.3181,8.669 62.3311,20.682 62.3311,35.5 Z" id="linie-innen" stroke="#C1272D" stroke-width="1.651" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.411,3.7"></path>
+            <polygon id="strich-oben" fill="#C1272D" points="35.085 25.94 39.021 25.94 39.021 19.38 35.085 19.38"></polygon>
+            <polygon id="strich-unten" fill="#C1272D" points="35.085 49.555 39.021 49.555 39.021 42.995 35.085 42.995"></polygon>
+            <path d="M36.9131,22.3789 C40.4481,22.3789 43.1571,23.6179 45.2681,25.7309 L42.6981,28.7609 C41.0911,27.2909 39.2551,26.1899 36.6841,26.1899 C32.2291,26.1899 28.9241,29.3119 28.9241,34.4079 C28.9241,39.4129 32.2751,42.6269 36.6371,42.6269 C39.3471,42.6269 41.4121,41.3869 43.0191,39.9179 L45.4071,42.9939 C43.4781,44.9229 40.5861,46.4379 36.6841,46.4379 C29.4291,46.4379 24.8371,41.3869 24.8371,34.4539 C24.8371,27.5659 29.6121,22.3789 36.9131,22.3789" id="C" fill="#C1272D"></path>
+        </g>
+    </g>
+</svg>

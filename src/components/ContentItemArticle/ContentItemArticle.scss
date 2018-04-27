@@ -1,0 +1,44 @@
+.contentItemArticle{
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__heading {
+        margin: 0 0 40px;
+        font-size: 28px;
+        text-align: center;
+        > a {
+            text-decoration: none;
+            color: #000;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__restriction {
+        font-size: 20px;   
+        margin: 0px 0 60px;      
+        font-weight: 300;  
+        color: #a9a9a9;   
+        font-family: 'Fira Sans', sans-serif;
+    }
+
+    &__content {
+        position: relative;        
+        margin: 0;
+        line-height: 1.6;
+        font-size: 20px;
+    }
+
+    &__articleContent {
+        font-family: 'Droid Serif', serif;
+        
+        p {
+            margin-bottom: 10px;
+        }
+    }
+}

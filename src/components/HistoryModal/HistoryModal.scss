@@ -1,0 +1,86 @@
+$color: rgba(255,255,255,0.9);
+
+.historyModal {
+    &__container {
+        background: #00C084;
+        
+        > h1 {
+            padding: 15px 10px;
+            color: $color;
+            text-align: left;
+            font-size: 24px;
+            font-weight: 500px;
+            box-sizing: border-box;
+            
+            margin: 0;
+
+            width: 80%;
+            max-width: 800px;        
+    
+
+            border-bottom: 1px solid $color;
+        }
+    }
+    
+    &__table {
+        width: 80%;
+        max-width: 800px;        
+
+        padding: 0;
+        margin: 0;
+    
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__row {
+        padding: 10px;
+        margin: 0;
+        flex: none;
+        display: flex;
+        flex-direction: row;
+
+        justify-content: space-between;
+
+        > li {
+            flex: 1;
+            color: $color;
+            font-size: 18px;
+            font-weight: 300;
+        }
+
+        border-bottom: 1px solid $color;
+
+        &--tableHead {
+            padding: 20px 10px;
+            border-bottom: 4px solid $color;
+            margin-bottom: 5px;
+            
+            > li {
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                font-size: 14px;
+            }
+        }
+    }
+
+
+    &__date {
+        text-align: left;
+    }
+
+    &__activity {
+        text-align: left;     
+        
+        > span {
+            text-decoration: underline;
+            color: $color;
+            cursor: pointer;
+        }
+    }
+
+    &__amount {
+        text-align: right;        
+    }
+
+}

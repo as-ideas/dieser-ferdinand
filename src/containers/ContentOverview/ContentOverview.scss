@@ -1,0 +1,25 @@
+ 
+ .contentOverview {
+    &__container {
+
+    }
+
+    &__contentList {
+        padding: 0;
+        margin: 0;
+    }
+
+    &__listItem {
+        width: 100%;
+
+        padding: 100px 0;
+
+        border-bottom: 2px solid #ccc;
+
+        &:last-child {
+            margin-bottom: 0px;
+            border-bottom: 0;
+        }
+    }
+}
+
