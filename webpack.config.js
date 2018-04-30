@@ -1,43 +1,61 @@
 const webpack = require('webpack');
 const path = require('path');
-var CopyWebpackPlugin = require('copy-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+
 
 module.exports = (env) => {
     const plugins = [
-        new CopyWebpackPlugin([{ from: './assets/', to: 'assets' }])
+        new CopyWebpackPlugin([{from: './assets/', to: 'assets'}])
     ];
     if (env && env.prod) {
         plugins.push(
-            new webpack.optimize.UglifyJsPlugin({
-                compress: {
-                    warnings: false,
-                    screw_ie8: true,
-                    conditionals: true,
-                    unused: true,
-                    comparisons: true,
-                    sequences: true,
-                    dead_code: true,
-                    evaluate: true,
-                    if_return: true,
-                    join_vars: true
-                },
-                output: {
-                    comments: false
-                }
-            }),
-            new webpack.DefinePlugin({
-                'process.env': {
-                    NODE_ENV: JSON.stringify('production')
-                }
-            })
+                new UglifyJsPlugin({
+                    uglifyOptions: {
+                        debug: false,
+                        sourceMap: false,
+                        beautify: false,
+                        compress: {
+                            ie8: true,
+                            passes: 3
+                        },
+                        parse: {
+                            // screw_ie8: true,
+                            // sequences: true,  // join consecutive statemets with the “comma operator”
+                            // properties: true,  // optimize property access: a["foo"] → a.foo
+                            // dead_code: true,  // discard unreachable code
+                            // drop_debugger: true,  // discard “debugger” statements
+                            // unsafe: false, // some unsafe optimizations (see below)
+                            // conditionals: true,  // optimize if-s and conditional expressions
+                            // comparisons: true,  // optimize comparisons
+                            // evaluate: true,  // evaluate constant expressions
+                            // booleans: true,  // optimize boolean expressions
+                            // loops: true,  // optimize loops
+                            // unused: true,  // drop unused variables/functions
+                            // hoist_funs: true,  // hoist function declarations
+                            // hoist_vars: false, // hoist variable declarations
+                            // if_return: true,  // optimize if-s followed by return/continue
+                            // join_vars: true,  // join var declarations
+                            // cascade: true,  // try to cascade `right` into `left` in sequences
+                            // side_effects: true,  // drop side-effect-free statements
+                            // warnings: false,
+                        },
+                        comments: false
+
+                    }
+                }),
+                new webpack.DefinePlugin({
+                    'process.env': {
+                        NODE_ENV: JSON.stringify('production')
+                    }
+                })
         );
     }
 
     return {
-        entry: {
-            app: './src/index.js',
-            vendor: ['react', 'react-dom']
-        },
+        mode: 'development',
+        entry: './src/index.js',
         output: {
             path: path.join(__dirname, './dist'),
             filename: '[name].bundle.js',
@@ -57,28 +75,17 @@ module.exports = (env) => {
                 {
                     test: /\.css$/,
                     exclude: /node_modules/,
-                    use: [
-                        'style-loader',
-                        'css-loader',
-                        'postcss-loader'
-                    ]
+                    use: []
                 },
                 {
                     test: /\.scss$/,
                     exclude: /node_modules/,
-                    use: [
-                        'style-loader',
-                        'css-loader',
-                        'postcss-loader',
-                        'sass-loader',
-                    ]
+                    use: []
                 },
                 {
                     test: /\.(js|jsx)$/,
                     exclude: /node_modules/,
-                    use: [
-                        'babel-loader'
-                    ],
+                    use: [],
                 },
             ],
         },
@@ -89,7 +96,9 @@ module.exports = (env) => {
                 path.join(__dirname, './src')
             ]
         },
-        plugins,
+        plugins: [
+            new HtmlWebpackPlugin()
+        ],
         devServer: {
             historyApiFallback: true
         }

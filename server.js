@@ -1,7 +1,7 @@
-var port = process.env.PORT || 8080;
-var express = require('express');
-var compression = require('compression');
-var app = express();
+let port = process.env.PORT || 8080;
+let express = require('express');
+let compression = require('compression');
+let app = express();
 
 app.use(compression());
 app.use(express.static(__dirname + '/dist'));
