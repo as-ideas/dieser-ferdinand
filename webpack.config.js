@@ -6,9 +6,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 
 module.exports = (env) => {
-    const plugins = [
-        new CopyWebpackPlugin([{from: './assets/', to: 'assets'}])
-    ];
+    const plugins = [];
     if (env && env.prod) {
         plugins.push(
                 new UglifyJsPlugin({
@@ -63,16 +61,6 @@ module.exports = (env) => {
         module: {
             rules: [
                 {
-                    test: /\.html$/,
-                    exclude: /node_modules/,
-                    use: {
-                        loader: 'file-loader',
-                        query: {
-                            name: '[name].[ext]'
-                        },
-                    },
-                },
-                {
                     test: /\.css$/,
                     exclude: /node_modules/,
                     use: []
@@ -97,7 +85,10 @@ module.exports = (env) => {
             ]
         },
         plugins: [
-            new HtmlWebpackPlugin()
+            new CopyWebpackPlugin([{from: './assets/', to: 'assets'}]),
+            new HtmlWebpackPlugin({
+                template:'./assets/index.html'
+            })
         ],
         devServer: {
             historyApiFallback: true
