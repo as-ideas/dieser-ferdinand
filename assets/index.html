@@ -22,11 +22,26 @@
          adSSetup = {
             view: "d",
             partners: true,
-            adPlacements: ["superbanner"],
+            adPlacements: ["superbanner", "sky", "billboard", "mrec"],
             adSlotSizes: {
                 "superbanner": [{
                     "minWidth": 1,
-                    "sizes": [[728, 90]]
+                    "sizes": [[728,90],[728,600],[1000,600]]
+                }],
+                "sky": [{
+                    "minWidth": 1,
+                    "sizes": [[160,600],[120,600],[300,600],[500,1000],[1000,1000]]
+                }],
+                "billboard": [{
+                    "minWidth": 799,
+                    "sizes": [[800,250]]
+                },{
+                    "minWidth": 969,
+                    "sizes": [[970,250],[800,250]]
+                }],
+                "mrec": [{
+                    "minWidth": 1,
+                    "sizes": [[300,250],[300,600]]
                 }]
             },
             colorBg: true, // enable/disable coloring of the page-background
@@ -157,6 +172,9 @@
 				================================================== -->
 			<div class="section-content blog-section second-style">
 				<div class="container">
+                <!-- AD -->
+                <div id="skyWrapper" class="container"><div id="sky"></div></div>
+                <!-- End Ad -->
           			<div class="blog-box masonry one-col triggerAnimation animated" data-animate="slideInUp">
 
 						<div class="blog-post architecture print">
@@ -178,6 +196,10 @@
 								<a class="button-third" href="#">Read More</a>
 							</div>
 						</div>
+
+                        <!-- AD -->
+                        <div id="billboardWrapper" class="container"><div id="billboard"></div></div>
+                        <!-- End Ad -->
           
 						<div class="blog-post video">
 							<div class="post-date">
@@ -346,18 +368,10 @@
 
 						<div class="col-md-3">
 							<div class="widget footer-widget flickr-widget">
-								<h1>Flickr Stream</h1>
-								<ul class="flickr">
-									<li><a href="#"><img alt="" src="http://placehold.it/70x70"></a></li>
-									<li><a href="#"><img alt="" src="http://placehold.it/70x70"></a></li>
-									<li><a href="#"><img alt="" src="http://placehold.it/70x70"></a></li>
-									<li><a href="#"><img alt="" src="http://placehold.it/70x70"></a></li>
-									<li><a href="#"><img alt="" src="http://placehold.it/70x70"></a></li>
-									<li><a href="#"><img alt="" src="http://placehold.it/70x70"></a></li>
-									<li><a href="#"><img alt="" src="http://placehold.it/70x70"></a></li>
-									<li><a href="#"><img alt="" src="http://placehold.it/70x70"></a></li>
-									<li><a href="#"><img alt="" src="http://placehold.it/70x70"></a></li>
-								</ul>
+								<h1>Merc Advertising</h1>
+                                <!-- AD -->
+                                <div id="mrecWrapper" class="container"><div id="mrec"></div></div>
+                                <!-- End Ad -->
 							</div>							
 						</div>
 
