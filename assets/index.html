@@ -22,15 +22,11 @@
          adSSetup = {
             view: "d",
             partners: true,
-            adPlacements: ["superbanner", "sky", "billboard", "mrec"],
+            adPlacements: ["superbanner", "billboard", "mrec"],
             adSlotSizes: {
                 "superbanner": [{
                     "minWidth": 1,
                     "sizes": [[728,90],[728,600],[1000,600]]
-                }],
-                "sky": [{
-                    "minWidth": 1,
-                    "sizes": [[160,600],[120,600],[300,600],[500,1000],[1000,1000]]
                 }],
                 "billboard": [{
                     "minWidth": 799,
@@ -172,9 +168,6 @@
 				================================================== -->
 			<div class="section-content blog-section second-style">
 				<div class="container">
-                <!-- AD -->
-                <div id="skyWrapper" class="container"><div id="sky"></div></div>
-                <!-- End Ad -->
           			<div class="blog-box masonry one-col triggerAnimation animated" data-animate="slideInUp">
 
 						<div class="blog-post architecture print">
@@ -197,10 +190,17 @@
 							</div>
 						</div>
 
-                        <!-- AD -->
-                        <div id="billboardWrapper" class="container"><div id="billboard"></div></div>
-                        <!-- End Ad -->
-          
+                        <div class="blog-post  ">
+                            <div class="post-date">
+                                <p><span>15</span>may</p>
+                            </div>
+                            <div class="post-gal">
+                                <!-- AD Billboard-->
+                                <div id="billboardWrapper" class="container"><div id="billboard"></div></div>
+                                <!-- End Ad -->
+                            </div>
+                        </div>
+
 						<div class="blog-post video">
 							<div class="post-date">
 								<p><span>22</span>apr</p>
@@ -344,7 +344,6 @@
 								<h1>About</h1>
 								<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
 								<p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. </p>
-								<img src="images/footer-logo.png" alt="">
 							</div>
 						</div>
 
@@ -366,14 +365,6 @@
 							</div>
 						</div>
 
-						<div class="col-md-3">
-							<div class="widget footer-widget flickr-widget">
-								<h1>Merc Advertising</h1>
-                                <!-- AD -->
-                                <div id="mrecWrapper" class="container"><div id="mrec"></div></div>
-                                <!-- End Ad -->
-							</div>							
-						</div>
 
 						<div class="col-md-3">
 							<div class="widget footer-widget subscribe-widget">
@@ -383,12 +374,20 @@
 									<input type="text" id="e-mail" name="e-mail" placeholder="Email Address"/>
 									<input type="submit" id="submit" value="submit"/>
 								</form>
-							</div>							
+							</div>
 						</div>
 
+						<div class="col-md-3">
+							<div class="widget footer-widget flickr-widget">
+								<h1>Merc Advertising</h1>
+                                <!-- AD -->
+                                <div id="mrecWrapper" class="container"><div id="mrec"></div></div>
+                                <!-- End Ad -->
+							</div>
+						</div>
 					</div>
 					<div class="footer-line">
-						<p>Copyright 2014. "marble" by UpiFix. All rights reserved.</p>
+						<p>Copyright 2018. dieser ferdinand by AS IDEAS</p>
 					</div>
 				</div>
 			</div>
