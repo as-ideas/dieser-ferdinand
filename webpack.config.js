@@ -86,6 +86,7 @@ module.exports = (env) => {
         },
         plugins: [
             new CopyWebpackPlugin([{from: './assets/', to: 'assets'}]),
+            new CopyWebpackPlugin([{from: './public/', to: ''}]),
             new HtmlWebpackPlugin({
                 filename: 'index2.html',
                 template:'./assets/index2.html',
