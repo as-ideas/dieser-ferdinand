@@ -11,7 +11,7 @@
       {
         "advanced_settings": false,
         "poi_group_name": "axelSpringerSe_01",
-        "label_intro": "Auf dieser Webseite werden Cookies gesetzt. Diese helfen uns bei der Analyse der Webseite, Optimierung redaktioneller Services, Durchführung personalisierter Vermarktung und ermöglichen das Teilen von Artikeln über soziale Netzwerke. Weiterführende Infos und Widerspruchsmöglichkeiten finden Sie in <a href='https://www.welt.de/services/article157550705/Datenschutzerklaerung-WELT-DIGITAL.html' class='as-oil__intro-txt--link'>unserer Datenschutzerklärung</a>.",
+        "label_intro": "Auf dieser Webseite werden Cookies gesetzt. Diese helfen uns bei der Analyse der Webseite, Optimierung redaktioneller Services, Durchführung personalisierter Vermarktung und ermöglichen das Teilen von Artikeln über soziale Netzwerke. Weiterführende Infos und Möglichkeiten, die Cookies auszuschalten finden Sie in <a href='https://www.welt.de/services/article157550705/Datenschutzerklaerung-WELT-DIGITAL.html' class='as-oil__intro-txt--link'>unserer Datenschutzerklärung</a>.",
         "label_button_yes": "OK",
         "theme": "small light",
         "timeout": -1
@@ -91,7 +91,16 @@
 
         button.as-oil__btn-optin {
             background-color: #f18825;
+            width: 107px;
+            height: 40px;
         }
+
+        @media (max-width: 600px) {
+            button.as-oil__btn-optin {
+                width: 100%;
+            }
+        }
+
 
         button.as-oil__btn-optin:hover {
             background-color: white;
