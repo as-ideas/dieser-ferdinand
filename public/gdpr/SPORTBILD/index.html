@@ -11,7 +11,7 @@
       {
         "advanced_settings": false,
         "poi_group_name": "axelSpringerSe_01",
-        "label_intro": "BILD verwendet Cookies zur Analyse und Verbesserung der Webseite, zum Ausspielen personalisierter Anzeigen und um Ihnen das Teilen von Artikeln in sozialen Netzwerken zu ermöglichen. <a href='https://www.bild.de/corporate-site/datenschutz/datenschutz/artikel-datenschutz-54485502.bild.html' class='as-oil__intro-txt--link'>Hier</a> gibt es weitere Informationen und Möglichkeiten, die Cookies auszuschalten.",
+        "label_intro": "SPORTBILD verwendet Cookies zur Analyse und Verbesserung der Webseite, zum Ausspielen personalisierter Anzeigen und um Ihnen das Teilen von Artikeln in sozialen Netzwerken zu ermöglichen. <a href='https://www.bild.de/corporate-site/datenschutz/datenschutz/artikel-datenschutz-54485502.bild.html' class='as-oil__intro-txt--link'>Hier</a> gibt es weitere Informationen und Möglichkeiten, die Cookies auszuschalten.",
         "label_button_yes": "OK",
         "theme": "small dark",
         "timeout": -1
@@ -56,6 +56,10 @@
 
     <!-- CUSTOM STYLE FOR UNIT-->
     <style>
+        .as-oil__intro-txt {
+            font-family: 'PT Sans Narrow', sans-serif !important;
+        }
+
         div.as-oil-content-overlay {
             background-color: rgba(0, 0, 0, 0.8);
         }
@@ -71,8 +75,9 @@
             flex-wrap: wrap;
         }
 
+
         .small p.as-oil__intro-txt {
-            margin: 12px;
+            margin: 0;
             font-family: GothamXNarrow, serif;
             font-size: 16px;
             font-weight: normal;
@@ -81,6 +86,12 @@
             line-height: normal;
             letter-spacing: normal;
             color: #ffffff;
+        }
+
+        @media (min-width: 600px) {
+            .small p.as-oil__intro-txt {
+                margin: 0 0 0 1em;
+            }
         }
 
         .small div.as-oil-l-row {
@@ -99,13 +110,13 @@
             font-weight: 900;
             background-color: #dd0000;
             border-radius: initial;
+            width: 150px;
+            height: 41px;
         }
 
         button.as-oil__btn-optin:hover {
             background-color: #9C2422;
         }
-
-
     </style>
 </head>
 
